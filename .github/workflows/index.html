@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodlovers.com</title>
+</head>
+
+<body>
+  
+
+    <!--navigation bar horizontal-->
+    <header>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0px;
+                padding:0px;
+                overflow:hidden;
+                background-color:goldenrod ;
+            }
+            li {
+                float: left;
+            }
+            li a{
+                display:block;
+                color:azure;
+                text-align: center;
+                padding: 16px 16px;
+                text-decoration: wavy;
+            }
+            li a:hover {
+                background-color:black;
+                }
+        
+        
+
+        
+        </style>
+
+    </header>
+    <main>
+<ul>
+    <li><a href="Home.com">Home</a></li>
+    <li><a href="Downloads.com">Downloads</a></li>
+    <li><a href="Aboutme.com">About me</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Food">Sources</a></li>
+<!--prompt button-->
+</ul>
+    
+   <p id ="pro"></p>
+    <button onclick='document.getElementById("pro").innerHTML="Welcome!";'style="font-size:100%">Prompt
+    </button>
+    
+<!--change background color-->
+<style>
+    body {
+        background-color:antiquewhite;
+    }
+</style>
+    <button onclick="knowcolor()"style="font-size:100%">ChangeBG</button>
+    
+    
+    <script>
+        function knowcolor()
+        {
+            ChangeBG('powderblue');
+        }
+        function ChangeBG(color)
+        {
+            document.body.style.background=color;
+        }
+  </script>
+  
+
+<!--change heading--->
+
+<h1 id="changehead">FOOD</h1>
+
+    <button onclick="ct1()"style="font-size:100%">Change text</button>
+    <script>
+        function ct()
+        {
+            var headin =document.getElementById("changehead") ;
+           headin.textContent ='FOOD LOVER';
+        }
+        function ct1()
+        {
+            setTimeout(ct,5000);
+        }
+        
+        
+            
+        
+    </script>
+
+
+    
+    
+    <pre>
+        <p style="font-family: Arial;">
+    Food is any substance consumed by an organism for nutritional support. Food is usually of plant, animal, or fungal origin, and contains essential nutrients, such as 
+    carbohydrates, fats, proteins, vitamins, or minerals. The substance is ingested by an organism and assimilated by the organism's cells to provide energy, maintain life,or 
+    stimulate growth. Different species of animals have different feeding behaviours that satisfy the needs of their unique metabolisms, often evolved to fill a specific 
+    ecological niche within specific geographical contexts.
+       
+    Omnivorous humans are highly adaptable and have adapted to obtain food in many different ecosystems. The majority of the food energy required is supplied by the industrial 
+    food industry, which produces food with intensive agriculture and distributes it through complex food processing and food distribution systems. This system of conventional 
+    agriculture relies heavily on fossil fuels, which means that the food and agricultural system is one of the major contributors to climate change, accountable for as much 
+    as 37% of total greenhouse gas emissions.
+    
+    </p></p></pre>
+    
+
+
+
+
+
+
+
+</main>
+<footer>
+
+<!--displaying date and time-->
+<p id="dt"></p>
+<script>
+const d= new Date();
+document.getElementById("dt").innerHTML=d;
+</script>
+
+
+</footer>
+
+
+        
+         
+         
+        
+
+</body>
+</html>
